@@ -1,7 +1,22 @@
 # Desafío para Software Engineers
 
-Nombre postulante: Nicolás Giacaman
-Link a la app en producción: [LINK DEL DEPLOY]
+- Nombre postulante: **Nicolás Giacaman**
+- Link a la app en producción: https://kimchechallenge.pages.dev/
+
+## Pregunta técnica
+
+> La tabla que contiene la información correspondiente a la asistencia diaria de un niño en un colegio tiene 90 millones de filas. Todas las tablas del sistema existen en la misma BDD en MySQL. La lógica del backend que actualiza la información correspondiente al pasar la asistencia tiene un tiempo de servicio p95 de 10 segundos. El equipo está interesado en bajar este tiempo para mejorar la experiencia del usuario.
+> **¿Qué propondrías para enfrentar el problema?**
+
+---
+
+**Respuesta:** Como backend y viendo que al ser una base de datos MySQL e incluir todas las tablas en la misma BDD se puede optimizar el almacenamiento de datos separando los datos en fragmentos entre las tablas, esto quiere decir que con el beneficio de las claves en los elementos se puede concatenar una query de datos pequeños para obtener un resultado completo, esto aunque se vea como un proceso mas grande tiende a mejorar el rendimiento al no saturar una tabla con datos que pueden estar repetidos.
+
+a nivel de frontend lo ideal es evitar traer grande cantidad de datos, por lo cual se recomienda usar paginados para mejorar la experiencia del usuario evitando generar muchos elementos en el navegador, una opción actual es ir cargando información de forma progresiva e ir eliminando la que ya fue vista.
+
+Desde un punto de vista de IT, lo ideal es usar un sistema de cache como ProxySQL que pueda generar una capa de almacenamiento donde guardar las consultas y permita a la aplicación acceder mas rápido.
+
+Estos puntos de vista son tomados en cuenta por ser una BDD MySQL la cual trabaja con la velocidad del disco y no en memoria como otras BDD que se cargan en RAM para mejorar el rendimiento de consultas.
 
 ## Instrucciones
 
