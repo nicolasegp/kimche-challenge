@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import './assets/spectre.min.css';
+import './assets/icons.min.css';
+import './assets/web.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+const client = new ApolloClient({
+	uri: 'https://countries.trevorblades.com',
+	cache: new InMemoryCache(),
+});
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<ApolloProvider client={client}>
+		<App />
+	</ApolloProvider>,
+	document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
