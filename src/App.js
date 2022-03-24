@@ -29,14 +29,14 @@ export default function App() {
 	if(loading) {
 		return (
 			<main className="container grid-md my-2">
-				<h1>Loading...</h1>
+				<div class="loading loading-lg"></div>
 			</main>
 		);
 	}
 	if(error) {
 		return (
 			<main className="container grid-md my-2">
-				<h1>Error...</h1>
+				<h1>Error 😭</h1>
 			</main>
 		);
 	}
