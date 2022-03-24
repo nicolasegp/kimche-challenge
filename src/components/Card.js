@@ -1,6 +1,6 @@
 export default function Card({ item }) {
 	return (
-		<div className="column col-6 my-2">
+		<div className="column col-6 col-sm-12 my-2">
 			<div className="card">
 				<div className="card-header">
 					<div className="card-title h5 text-ellipsis" title={item.name}>

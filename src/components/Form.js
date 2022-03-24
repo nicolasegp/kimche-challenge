@@ -33,13 +33,13 @@ export default function Form({ setNombre, setFiltro }) {
 			</form>
 			<div className="card-body">
 				<div className="columns p-1">
-					<div className="column col-6 h5">Group by</div>
-					<div className="column col-3">
+					<div className="column col-6 hide-sm h5">Group by</div>
+					<div className="column col-3 col-sm-6">
 						<button className={`btn btn-block mx-1 ${opcion === 1 ? 'btn-primary' : ''}`} onClick={() => setOpcion(1)}>
 							<i class="icon icon-location"></i> Continent
 						</button>
 					</div>
-					<div className="column col-3">
+					<div className="column col-3 col-sm-6">
 						<button className={`btn btn-block mx-1 ${opcion === 2 ? 'btn-primary' : ''}`} onClick={() => setOpcion(2)}>
 							<i class="icon icon-person"></i> Languages
 						</button>
