@@ -5,7 +5,8 @@
 
 ## Cambios
 
-Actualmente el repositorio pasa a ser público.
+Actualmente el repositorio pasa a ser público, tambien se creo un proyecto alterno escrito en Svelte para comprar los archivos resultantes.
+El proyecto en Svelte se puede ver en: [Kimche Challenge _(Svelte)_](https://github.com/nicolasegp/kimche-challenge-svelte)
 
 - **v2**
   - Prueba del Stack: Vite, React 18, Redux Toolkit
