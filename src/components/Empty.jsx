@@ -1,4 +1,4 @@
-export default function Vacio() {
+const Vacio = () => {
 	return (
 		<div className="empty">
 			<div className="empty-icon">
@@ -7,5 +7,7 @@ export default function Vacio() {
 			<p className="empty-title h2">Nothing to Show</p>
 			<p className="empty-subtitle">You should check the country name</p>
 		</div>
-	);
+	)
 }
+
+export default Vacio
