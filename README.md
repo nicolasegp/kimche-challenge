@@ -5,12 +5,32 @@
 
 ## Cambios
 
-Actualmente el repositorio pasa a ser público, tambien se creo un proyecto alterno escrito en Svelte para comprar los archivos resultantes.
-El proyecto en Svelte se puede ver en: [Kimche Challenge _(Svelte)_](https://github.com/nicolasegp/kimche-challenge-svelte)
+> Actualmente el repositorio pasa a ser público para comparar distintas librerias
 
-- **v2**
-  - Prueba del Stack: Vite, React 18, Redux Toolkit
-  - ApolloClient no es compatible con React 18 😢
+> (ApolloClient no es compatible con React 18 😢)
+
+## Stack
+
+- React v18
+- Vite v2
+- Redux Toolkit v1
+
+## Comparación
+
+| Librería      | Bundle JS | Bundle CSS |     Repo     |   Online   |
+|---------------|:---------:|:----------:|:------------:|:----------:|
+| React Webpack |   306 KB  |    57 KB   |      N/A     |     N/A    |
+| React Vite    |   172 KB  |    55 KB   | [Github][g1] | [Demo][d1] |
+| Vue3 Vite     |   61 KB   |    55 KB   | [Github][g2] | [Demo][d2] |
+| Svelte        |   14 KB   |    56 KB   | [Github][g3] | [Demo][d3] |
+
+[g1]: https://github.com/nicolasegp/kimche-challenge
+[g2]: https://github.com/nicolasegp/kimche-challenge-vue
+[g3]: https://github.com/nicolasegp/kimche-challenge-svelte
+
+[d1]: https://kimche-challenge.pages.dev/
+[d2]: https://kimche-challenge-vue.pages.dev/
+[d3]: https://kimche-challenge-svelte.pages.dev/
 
 ## Instrucciones
 
